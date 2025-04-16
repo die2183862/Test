@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Course Name: CIS133DA
+    Section: 19215
+    Lesson: Final Lesson 14
+    -->
+    <title>Before It Melts: Feedback</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Diego Ortiz">
+    <meta name="description" content="Stay updated with the latest climate news, events, and insights.">
+    <meta name="keywords" content="climate news, climate change updates, environmental blog">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="css/default_style.css">
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="css/mobile_style.css">
+    <link rel="stylesheet" media="screen and (min-width: 450px) and (max-width: 900px)" href="css/tablet_style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <li><a href="index.html"><h1>Before It Melts</h1></a></li>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explained.html">What is Climate Change?</a></li>
+                    <li><a href="impacts.html">Impacts</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Feedback Form</h2>
+            <p>Before It Melts can email or call you to confirm any additional feedback information. Submit the following form and select appropriate response if you would like to be contacted.</p>
+            <form action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx" method="post">        
+                <label for="fullname">Full Name:</label>
+                <input class="widefield" id="fullname" type="text" name="fullname">
+                <label for="useremail">Email:</label>
+                <input class="widefield" id="useremail" type="email" name="UserEmail" ><br>
+                <label for="userphone">Phone:</label>
+                <input class="widefield"  id="userphone" type="text" name="phone" ><br>
+
+                <p>How would you prefer we get back to you?</p>
+                    
+                <label><input type="checkbox" name="contactmethod" value="contactbyphone" id="phone">Phone</label>
+                <label><input type="checkbox" name="contactmethod" value="contactbyemail" id="contactemail">Email</label>
+                <label><input type="checkbox" name="contactmethod">No contact requested</label>
+
+                <br>
+                <label for="comments">Feedback:</label>
+                <textarea id="comments"></textarea>
+                <br>
+                <button type="reset" onclick="formReset()">Reset form</button>
+                <button type="submit" onclick="formSubmit()">Submit form</button>
+            </form>
+            <p id="resetMessage" style="visibility:hidden;">This form has been reset.</p>
+
+        </main>
+        <footer>
+        <p><small>Copyright by DIE2183862 &copy; 2025</small><br>Last Modified -<span id="lastModified"></span></p>
+        </footer>
+    </div>
+    <script src="scripts/javascript.js"></script>
+</body>
+</html>
